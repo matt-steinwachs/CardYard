@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @zone.user
+%p
+  %b Game:
+  = @zone.game
+%p
+  %b Zone data:
+  = @zone.zone_data
+
+= link_to 'Edit', edit_zone_path(@zone)
+\|
+= link_to 'Back', zones_path

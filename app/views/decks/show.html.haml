@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @deck.user
+%p
+  %b Name:
+  = @deck.name
+%p
+  %b Deck data:
+  = @deck.deck_data
+
+= link_to 'Edit', edit_deck_path(@deck)
+\|
+= link_to 'Back', decks_path

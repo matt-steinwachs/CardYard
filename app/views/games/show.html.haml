@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @game.user
+%p
+  %b Type:
+  = @game.type
+%p
+  %b Game data:
+  = @game.game_data
+
+= link_to 'Edit', edit_game_path(@game)
+\|
+= link_to 'Back', games_path
