@@ -10,19 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require vfs_fonts.js
-//= require jszip.min.js
-//= require pdfmake.min.js
-//= require jquery-2.1.4.min.js
-//= require jquery.dataTables.js
-//= require dataTables.buttons.js
-//= require buttons.html5.min.js
-//= require buttons.print.js
-//= require dataTables.colReorder.js
-//= require dataTables.fixedHeader.min.js
-//= require jquery.blockUI.js
-//= require jquery-ui.js
-//= require jquery.ui.touch-punch.js
-//= require jquery.ui-contextmenu.js
-//= require select2.full.min.js
+//= require lib/vfs_fonts.js
+//= require lib/jszip.min.js
+//= require lib/pdfmake.min.js
+//= require lib/jquery-2.1.4.min.js
+//= require lib/jquery.dataTables.js
+//= require lib/dataTables.buttons.js
+//= require lib/buttons.html5.min.js
+//= require lib/buttons.print.js
+//= require lib/dataTables.colReorder.js
+//= require lib/dataTables.fixedHeader.min.js
+//= require lib/jquery.blockUI.js
+//= require lib/jquery-ui.js
+//= require lib/jquery.ui.touch-punch.js
+//= require lib/jquery.ui-contextmenu.js
+//= require lib/select2.full.min.js
 
