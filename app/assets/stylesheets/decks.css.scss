@@ -1,3 +1,285 @@
 // Place all the styles related to the Decks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: asset-url('extra_clean_paper.png');
+  background-color: #cccccc;
+}
+
+#attributes_to_include{
+  width:300px;
+}
+
+#list_container{
+  display:none;
+  margin-top: 15px;
+  box-shadow: 0px -2px 20px 1px #888888;
+  border: 1px solid black;
+}
+
+#list_wrapper {
+  padding: 5px;
+}
+
+.odd{
+  background-color: whitesmoke !important;
+}
+
+
+#menu{
+  margin-bottom:20px;
+}
+
+#menu_buttons{
+  height: 37px;
+  margin-top: 20px;
+}
+
+#menu_buttons button{
+  -webkit-appearance: none;
+  height: 37px;
+
+  box-sizing: border-box;
+  margin-right: 0.333em;
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.88em;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+
+  background-color: #e9e9e9;
+  background-image: -webkit-linear-gradient(top, white 0%, #e9e9e9 100%);
+  background-image: -moz-linear-gradient(top, white 0%, #e9e9e9 100%);
+  background-image: -ms-linear-gradient(top, white 0%, #e9e9e9 100%);
+  background-image: -o-linear-gradient(top, white 0%, #e9e9e9 100%);
+  background-image: linear-gradient(top, white 0%, #e9e9e9 100%);
+
+
+  text-decoration: none;
+  outline: none;
+}
+
+#menu_buttons button:hover{
+  background-color: #e0e0e0;
+  background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #e0e0e0 100%);
+  background-image: -moz-linear-gradient(top, #f9f9f9 0%, #e0e0e0 100%);
+  background-image: -ms-linear-gradient(top, #f9f9f9 0%, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #f9f9f9 0%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #f9f9f9 0%, #e0e0e0 100%);
+}
+
+#menu_buttons button:active{
+  background-color: #e2e2e2;
+  background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #e2e2e2 100%);
+  background-image: -moz-linear-gradient(top, #f3f3f3 0%, #e2e2e2 100%);
+  background-image: -ms-linear-gradient(top, #f3f3f3 0%, #e2e2e2 100%);
+  background-image: -o-linear-gradient(top, #f3f3f3 0%, #e2e2e2 100%);
+  background-image: linear-gradient(top, #f3f3f3 0%, #e2e2e2 100%);
+  box-shadow: inset 1px 1px 3px #999999;
+}
+
+
+#page{
+  display:none;
+}
+
+.right_side{
+  float:right;
+}
+
+.left_side{
+  float:left;
+}
+
+.textarea_resize {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+}
+
+#warnings{
+  display: none;
+  background-color: whitesmoke;
+  border: 1px solid #999;
+  width:200px;
+  padding:5px;
+}
+
+#card_not_found_warning_message{
+  display: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#card_not_found_warning_message p {
+  color:red;
+  margin: 0px;
+  display: inline;
+}
+
+#no_quantities_provided_warning_message{
+  display: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#no_quantities_provided_warning_message p{
+  color: red;
+  margin: 0px;
+  display: inline;
+}
+
+
+#toggle_warning_details{
+  display: inline;
+}
+
+.card_art{
+  width: 350px;
+}
+
+#local_save_menu{
+  padding: 10px;
+}
+
+#local_save_menu button{
+  margin-right: 10px;
+}
+
+#deck_name{
+  margin-bottom: 10px;
+}
+
+#local_load_menu{
+  padding: 10px;
+}
+
+#local_load_menu button{
+  margin-right: 10px;
+}
+
+#deck_names{
+  margin-bottom: 10px;
+}
+
+#link_popup{
+  padding: 10px;
+}
+
+#link{
+  margin-bottom:10px;
+  width: 96%;
+}
+
+.add_card{
+  background-image: asset-url('plus.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  width: 20%;
+  cursor: pointer;
+  color:black;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.add_card:hover{
+  font-weight:bold;
+}
+
+.show_card{
+  width: 80%;
+  cursor: pointer;
+  color:black;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.show_card:hover{
+  font-weight:bold;
+}
+
+.search_result{
+  display: table;
+  width: 100%;
+}
+
+#search_results {
+  background-color: white;
+}
+
+#search {
+  width: 298px;
+  border: 1px solid black;
+  font-size:16px ;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#search_results_container {
+  border: 1px solid black;
+  border-top-width: 0px;
+  display: none;
+}
+
+.field {
+  width: 300px;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+#decklist{
+  width: 294px;
+  border: 1px solid black;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  margin-top: 40px;
+}
+
+#dt-buttons-label p{
+  margin-bottom: 5px;
+}
+
+#loaded_deck_name {
+  display: inline;
+}
+
+table.dataTable thead .sorting {
+  background: asset-url('lib/sort_both.png') no-repeat center right !important;
+}
+table.dataTable thead .sorting_asc {
+  background: asset-url("lib/sort_asc.png") no-repeat center right !important;
+}
+table.dataTable thead .sorting_desc {
+  background: asset-url("lib/sort_desc.png") no-repeat center right !important;
+}
+table.dataTable thead .sorting_asc_disabled {
+  background: asset-url("lib/sort_asc_disabled.png") no-repeat center right !important;
+}
+table.dataTable thead .sorting_desc_disabled {
+  background: asset-url("lib/sort_desc_disabled.png") no-repeat center right !important;
+}
